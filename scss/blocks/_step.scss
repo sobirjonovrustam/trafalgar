@@ -1,0 +1,116 @@
+.step {
+    
+    // .step__inner-container
+    
+    &__inner-container {
+        margin-bottom: 200px;
+    }
+    
+    // .step__heading
+    
+    &__heading {
+        font-weight: 900;
+        font-size: 24px;
+        line-height: 32px;
+        color: #83888F;
+    }
+    
+    // .step__list
+    
+    &__list {
+        margin-bottom: 64px;
+        display: flex;
+    }
+    
+    // .step__item
+    
+    &__item {
+        width: 380px;
+        padding-top: 98px;
+        position: relative;
+    }
+    
+    &__item:last-child &__inner-wrraper::after {
+        display: none;
+    }
+    
+    // .step__inner-wrraper
+    
+    &__inner-wrraper {
+        position: relative;
+        margin-bottom: 67px;
+    }
+    
+    &__inner-wrraper::after {
+        content: ' ';
+        display: inline-block;
+        width: 100%;
+        height: 2px;
+        background-color: #FDD6BA;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translate(50% -50% );
+        z-index: -1;
+    }
+    
+    // .step__circle
+    
+    &__circle {
+        display: inline-block;
+        width: 31px;
+        height: 31px;
+        background: #FEFCF7;
+        border: 2px solid #0E8784;
+        border-radius: 50%;
+    }
+    
+    // .step__wrapper
+    
+    &__wrapper {
+        padding-right: 95px;
+    }
+    
+    // .step__item-number
+    
+    &__item-number {
+        font-weight: 900;
+        font-size: 72px;
+        line-height: 72px;
+        color: #FDD6BA;
+        margin-bottom: 38px;
+    }
+    
+    // .step__item-heading
+    
+    &__item-heading {
+        font-weight: 900;
+        font-size: 32px;
+        line-height: 36px;
+        color: #333D4B;
+        margin-bottom: 42px;
+    }
+    
+    // .step__item-text
+    
+    &__item-text {
+        font-family: 'Barlow';
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+        color: #333D4B;
+    }
+    
+    // .step__link
+    
+    &__link {
+        text-decoration: none;
+        font-weight: 900;
+        font-size: 18px;
+        line-height: 25px;
+        color: #FEFCF7;
+        background: #0E8784;
+        border-radius: 6px;
+        padding: 15px 31px;
+    }
+}
