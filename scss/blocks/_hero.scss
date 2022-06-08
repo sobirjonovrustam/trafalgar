@@ -38,8 +38,13 @@
         line-height: 25px;
         color: #FEFCF7;
         background: #0E8784;
+        cursor: pointer;
         border-radius: 6px;
         padding: 15px 31px;
+    }
+    
+    &__link:hover {
+        background: #66D2CF;
     }
 }
 .container {
@@ -55,6 +60,7 @@
         padding: 117px 702px 117px 85px;
         margin-bottom: 136px;
     }
+    
 }
 
 .container {
@@ -70,5 +76,22 @@
         padding: 137px 750px 137px 85px;
         margin-bottom: 168px;
     }
+    
+    @media
+    only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (   min--moz-device-pixel-ratio: 2),
+    only screen and (     -o-min-device-pixel-ratio: 2/1),
+    only screen and (        min-device-pixel-ratio: 2),
+    only screen and (                min-resolution: 192dpi),
+    only screen and (                min-resolution: 2dppx) { 
+        
+        &__bg-image {
+            background-image: url(./../images/coffee_bg_image@2x.jpg);
+        }
+
+        &__bg-img {
+            background-image: url(./../images/coffee_bg_image2@2x.jpg);
+        }
+    } 
 }
 
